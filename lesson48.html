@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lesson 48: Testing Flutter Apps</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header"><h1>Mobile App Development – Flutter</h1></header>
+<main class="lesson-container">
+
+  <div class="lesson-box">
+    <h2>Lesson 48: Testing Flutter Apps</h2>
+  </div>
+
+  <div class="lesson-box">
+    <pre><code>
+import 'package:flutter_test/flutter_test.dart';
+import 'package:myapp/main.dart';
+
+void main() {
+  testWidgets('Counter increments', (WidgetTester tester) async {
+    await tester.pumpWidget(CounterApp());
+    expect(find.text('Count: 0'), findsOneWidget);
+    await tester.tap(find.byIcon(Icons.add));
+    await tester.pump();
+    expect(find.text('Count: 1'), findsOneWidget);
+  });
+}
+    </code></pre>
+  </div>
+
+  <div class="lesson-nav">
+    <a href="lesson47.html" class="btn">Previous</a>
+    <a href="lesson49.html" class="btn">Next Lesson</a>
+  </div>
+
+</main>
+<footer class="site-footer"><p>© 2026 yusufmtech.com</p></footer>
+</body>
+</html>

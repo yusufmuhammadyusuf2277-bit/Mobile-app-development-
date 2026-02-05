@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lesson 25: Forms</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header"><h1>Mobile App Development – Flutter</h1></header>
+
+<main class="lesson-container">
+  <div class="lesson-box">
+    <h2>Lesson 25: Forms</h2>
+  </div>
+
+  <div class="lesson-box">
+    <pre><code>
+final _formKey = GlobalKey<FormState>();
+
+Form(
+  key: _formKey,
+  child: Column(
+    children: [
+      TextFormField(
+        decoration: InputDecoration(labelText: 'Enter your name'),
+        validator: (value) {
+          if (value!.isEmpty) return 'Name is required';
+          return null;
+        },
+      ),
+      ElevatedButton(
+        onPressed: () {
+          if (_formKey.currentState!.validate()) {
+            print('Form is valid');
+          }
+        },
+        child: Text('Submit'),
+      ),
+    ],
+  ),
+)
+    </code></pre>
+  </div>
+
+  <div class="lesson-nav">
+    <a href="lesson24.html" class="btn">Previous</a>
+    <a href="lesson26.html" class="btn">Next Lesson</a>
+  </div>
+</main>
+
+<footer class="site-footer"><p>© 2026 yusufmtech.com</p></footer>
+</body>
+</html>

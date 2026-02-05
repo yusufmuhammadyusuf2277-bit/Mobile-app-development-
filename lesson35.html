@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lesson 35: Dialogs & Alerts</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header"><h1>Mobile App Development – Flutter</h1></header>
+
+<main class="lesson-container">
+
+  <div class="lesson-box">
+    <h2>Lesson 35: Dialogs & Alerts</h2>
+  </div>
+
+  <div class="lesson-box">
+    <pre><code>
+showDialog(
+  context: context,
+  builder: (context) => AlertDialog(
+    title: Text('Alert'),
+    content: Text('This is a dialog'),
+    actions: [
+      TextButton(
+        onPressed: () => Navigator.pop(context),
+        child: Text('Close'),
+      ),
+    ],
+  ),
+);
+    </code></pre>
+  </div>
+
+  <div class="lesson-nav">
+    <a href="lesson34.html" class="btn">Previous</a>
+    <a href="lesson36.html" class="btn">Next Lesson</a>
+  </div>
+
+</main>
+
+<footer class="site-footer"><p>© 2026 yusufmtech.com</p></footer>
+</body>
+</html>

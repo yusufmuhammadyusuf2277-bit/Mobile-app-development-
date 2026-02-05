@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lesson 2: Types of Mobile Apps</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <h1>Mobile App Development – Flutter</h1>
+</header>
+
+<main class="lesson-container">
+
+  <div class="lesson-box">
+    <h2>Lesson 2: Types of Mobile Apps</h2>
+    <p>
+      Mobile applications are grouped into different types based on how they are built
+      and how they run on devices.
+    </p>
+  </div>
+
+  <div class="lesson-box">
+    <h3>1. Native Mobile Apps</h3>
+    <ul>
+      <li>Built for one platform only</li>
+      <li>Android → Java / Kotlin</li>
+      <li>iOS → Swift</li>
+    </ul>
+  </div>
+
+  <div class="lesson-box">
+    <h3>2. Web Apps</h3>
+    <ul>
+      <li>Run in a browser</li>
+      <li>No installation needed</li>
+      <li>Limited device access</li>
+    </ul>
+  </div>
+
+  <div class="lesson-box">
+    <h3>3. Cross-Platform Apps (Flutter)</h3>
+    <ul>
+      <li>One codebase</li>
+      <li>Runs on Android & iOS</li>
+      <li>Fast development</li>
+    </ul>
+  </div>
+
+  <div class="lesson-box">
+    <h3>Flutter Example Code</h3>
+
+    <pre><code>
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Types of Mobile Apps'),
+        ),
+        body: Center(
+          child: Text('Flutter is Cross-Platform'),
+        ),
+      ),
+    );
+  }
+}
+    </code></pre>
+  </div>
+
+  <div class="lesson-nav">
+    <a href="lesson1.html" class="btn">Previous</a>
+    <a href="lesson3.html" class="btn">Next Lesson</a>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <p>© 2026 yusufmtech.com</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lesson 1: Introduction to Mobile App Development</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <h1>Mobile App Development – Flutter</h1>
+</header>
+
+<main class="lesson-container">
+
+  <div class="lesson-box">
+    <h2>Lesson 1: Introduction to Mobile App Development</h2>
+    <p>
+      Mobile app development is the process of creating applications that run on
+      smartphones and tablets such as Android and iOS devices.
+    </p>
+  </div>
+
+  <div class="lesson-box">
+    <h3>Why Flutter?</h3>
+    <ul>
+      <li>One codebase for Android & iOS</li>
+      <li>Beginner friendly</li>
+      <li>High performance</li>
+    </ul>
+  </div>
+
+  <div class="lesson-box">
+    <h3>First Flutter App (Code)</h3>
+
+    <pre><code>
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('My First App'),
+        ),
+        body: Center(
+          child: Text('Hello Flutter'),
+        ),
+      ),
+    );
+  }
+}
+    </code></pre>
+  </div>
+
+  <div class="lesson-nav">
+    <a href="#" class="btn disabled">Previous</a>
+    <a href="lesson2.html" class="btn">Next Lesson</a>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <p>© 2026 yusufmtech.com</p>
+</footer>
+
+</body>
+</html>

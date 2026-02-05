@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lesson 47: Packages & Plugins</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header"><h1>Mobile App Development – Flutter</h1></header>
+<main class="lesson-container">
+
+  <div class="lesson-box">
+    <h2>Lesson 47: Using Packages & Plugins</h2>
+  </div>
+
+  <div class="lesson-box">
+    <pre><code>
+// Add dependency in pubspec.yaml
+url_launcher: ^6.1.5
+
+// Use in code
+import 'package:url_launcher/url_launcher.dart';
+
+void launchURL() async {
+  await launchUrl(Uri.parse('https://yusufmtech.com'));
+}
+    </code></pre>
+  </div>
+
+  <div class="lesson-nav">
+    <a href="lesson46.html" class="btn">Previous</a>
+    <a href="lesson48.html" class="btn">Next Lesson</a>
+  </div>
+
+</main>
+<footer class="site-footer"><p>© 2026 yusufmtech.com</p></footer>
+</body>
+</html>

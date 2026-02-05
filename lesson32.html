@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lesson 32: Provider State Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header"><h1>Mobile App Development – Flutter</h1></header>
+
+<main class="lesson-container">
+
+  <div class="lesson-box">
+    <h2>Lesson 32: Provider State Management</h2>
+  </div>
+
+  <div class="lesson-box">
+    <pre><code>
+import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+
+class Counter with ChangeNotifier {
+  int value = 0;
+  void increment() {
+    value++;
+    notifyListeners();
+  }
+}
+
+void main() {
+  runApp(
+    ChangeNotifierProvider(
+      create: (_) => Counter(),
+      child: MyApp(),
+    ),
+  );
+}
+    </code></pre>
+  </div>
+
+  <div class="lesson-nav">
+    <a href="lesson31.html" class="btn">Previous</a>
+    <a href="lesson33.html" class="btn">Next Lesson</a>
+  </div>
+
+</main>
+
+<footer class="site-footer"><p>© 2026 yusufmtech.com</p></footer>
+</body>
+</html>

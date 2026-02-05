@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lesson 17: Stateful Widgets</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header"><h1>Mobile App Development – Flutter</h1></header>
+
+<main class="lesson-container">
+  <div class="lesson-box">
+    <h2>Lesson 17: Stateful Widgets</h2>
+  </div>
+
+  <div class="lesson-box">
+    <pre><code>
+class Counter extends StatefulWidget {
+  @override
+  _CounterState createState() => _CounterState();
+}
+
+class _CounterState extends State<Counter> {
+  int count = 0;
+
+  @override
+  Widget build(BuildContext context) {
+    return Text('Count: $count');
+  }
+}
+    </code></pre>
+  </div>
+
+  <div class="lesson-nav">
+    <a href="lesson16.html" class="btn">Previous</a>
+    <a href="lesson18.html" class="btn">Next Lesson</a>
+  </div>
+</main>
+
+<footer class="site-footer"><p>© 2026 yusufmtech.com</p></footer>
+</body>
+</html>

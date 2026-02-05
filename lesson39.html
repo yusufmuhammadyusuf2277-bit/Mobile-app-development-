@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lesson 39: Todo App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header"><h1>Mobile App Development – Flutter</h1></header>
+
+<main class="lesson-container">
+
+  <div class="lesson-box">
+    <h2>Lesson 39: Todo App</h2>
+    <p>Create a simple Todo list using ListView and StatefulWidget.</p>
+  </div>
+
+  <div class="lesson-box">
+    <pre><code>
+List<String> todos = [];
+
+TextField(
+  controller: todoController,
+  decoration: InputDecoration(labelText: 'New Todo'),
+),
+ElevatedButton(
+  onPressed: () {
+    setState(() {
+      todos.add(todoController.text);
+      todoController.clear();
+    });
+  },
+  child: Text('Add'),
+),
+ListView.builder(
+  itemCount: todos.length,
+  itemBuilder: (context, index) => ListTile(
+    title: Text(todos[index]),
+  ),
+)
+    </code></pre>
+  </div>
+
+  <div class="lesson-nav">
+    <a href="lesson38.html" class="btn">Previous</a>
+    <a href="lesson40.html" class="btn">Next Lesson</a>
+  </div>
+
+</main>
+
+<footer class="site-footer"><p>© 2026 yusufmtech.com</p></footer>
+</body>
+</html>

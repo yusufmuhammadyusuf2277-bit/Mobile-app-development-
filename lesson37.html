@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lesson 37: Simple Counter App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header"><h1>Mobile App Development – Flutter</h1></header>
+
+<main class="lesson-container">
+
+  <div class="lesson-box">
+    <h2>Lesson 37: Simple Counter App</h2>
+    <p>Build a basic counter app using StatefulWidget.</p>
+  </div>
+
+  <div class="lesson-box">
+    <pre><code>
+class CounterApp extends StatefulWidget {
+  @override
+  _CounterAppState createState() => _CounterAppState();
+}
+
+class _CounterAppState extends State<CounterApp> {
+  int count = 0;
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text('Counter App')),
+      body: Center(child: Text('Count: $count')),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () => setState(() => count++),
+        child: Icon(Icons.add),
+      ),
+    );
+  }
+}
+    </code></pre>
+  </div>
+
+  <div class="lesson-nav">
+    <a href="lesson36.html" class="btn">Previous</a>
+    <a href="lesson38.html" class="btn">Next Lesson</a>
+  </div>
+
+</main>
+
+<footer class="site-footer"><p>© 2026 yusufmtech.com</p></footer>
+</body>
+</html>
